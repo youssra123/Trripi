@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_trip_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tripper.tripper.trip.activity.CreateTripActivity">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/MainToolBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--app:elevation="10dp"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
+        <!--app:popupTheme="@style/ThemeOverlay.AppCompat"-->
+        <!--android:background="@color/background3"/>-->
+
+
+    <include
+        android:id="@+id/MainToolBar"
+        layout="@layout/toolbar"/>
+
+    <!--<View android:background="@color/toolBarLineBackground"-->
+        <!--android:layout_width = "match_parent"-->
+        <!--android:layout_height="2dp"/>-->
+
+    <FrameLayout
+        android:id="@+id/trip_create_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

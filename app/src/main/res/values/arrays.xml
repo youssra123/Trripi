@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="landmark_view_details_icon_type_array">
+        <item>-1</item>
+        <item>@drawable/hotel</item>
+        <item>@drawable/attraction</item>
+        <item>@drawable/restaurant</item>
+        <item>@drawable/night_out</item>
+    </integer-array>
+
+    <integer-array name="landmark_map_marker_icon_type_array">
+        <item>@drawable/none_marker</item>
+        <item>@drawable/hotel_marker</item>
+        <item>@drawable/attraction_marker</item>
+        <item>@drawable/restaurant_marker</item>
+        <item>@drawable/nightout_marker</item>
+    </integer-array>
+</resources>

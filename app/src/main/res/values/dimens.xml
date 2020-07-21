@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="detail_text_size_extra_small">16sp</dimen>
+    <dimen name="detail_text_size_extra_extra_small">12sp</dimen>
+    <dimen name="detail_text_size_small">19sp</dimen>
+    <dimen name="detail_text_size_medium">22sp</dimen>
+    <dimen name="detail_text_size_large">25sp</dimen>
+    <dimen name="detail_text_size_extra_large">28sp</dimen>
+    <dimen name="detail_spinner_icon_size">32dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Trip timeLine -->
+    <dimen name="trip_list_view_title_text_size">24sp</dimen>
+    <dimen name="trip_list_view_sub_title_text_size">14sp</dimen>
+
+    <!-- Destination timeLine -->
+    <dimen name="landmark_timeline_row_left_margin">10dp</dimen>
+    <dimen name="landmark_timeline_view_line_left_margin">20dp</dimen>
+    <dimen name="add_when_empty_list_message_text_size">50sp</dimen>
+
+    <!-- Search results -->
+    <dimen name="group_header_margin">16dp</dimen>
+
+    <!-- Map -->
+    <dimen name="map_upper_padding">80dp</dimen>
+    <dimen name="map_marker_width">270dp</dimen>
+    <dimen name="map_marker_height">225dp</dimen>
+
+</resources>

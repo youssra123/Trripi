@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/search_title"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/view_map_item"
+        android:icon="@drawable/ic_google_maps_white_24dp"
+        android:title="@string/trip_map_view_menu_item_title"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/view_trip_details_item"
+        android:icon="@drawable/ic_info_outline_white_24px"
+        android:title="@string/trip_view_details_menu_item_title"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/show_quick_landmarks_option_item"
+        android:title="@string/show_quick_destinations_option_item_title"
+        android:visible="false"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/hide_quick_landmarks_option_item"
+        android:title="@string/hide_quick_destinations_option_item_title"
+        android:visible="false"
+        app:showAsAction="never">
+    </item>
+
+</menu>

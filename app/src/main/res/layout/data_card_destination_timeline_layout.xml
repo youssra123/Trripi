@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/landmark_card_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/landmark_timeline_row_left_margin"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <View
+                style="@style/TextViewTimelineLandmarkStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp" />
+
+            <View style="@style/ViewHorizontalLineRowTimelineLandmarkStyle" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/landmark_header_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="27/05/2008"/>
+
+    </LinearLayout>
+    <LinearLayout android:id="@+id/landmark_card_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/landmark_timeline_row_left_margin"
+        android:orientation="horizontal"
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <View style="@style/ViewHorizontalLineRowTimelineLandmarkStyle" />
+
+            <TextView
+                android:id="@+id/landmark_card_date_text_view"
+                style="@style/TextViewTimelineLandmarkStyle"
+                android:layout_alignParentTop="true"
+                android:text="15:32"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/landmark_card_view_widget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background2"
+                    android:orientation="vertical">
+
+                    <com.tripper.tripper.views.CustomImageView
+                        android:id="@+id/landmark_card_photo_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:id="@+id/landmark_card_timeline_text_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="18dp"
+                        android:paddingTop="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="18dp">
+
+                        <com.tripper.tripper.views.HighlightTextView
+                            android:id="@+id/landmark_card_timeline_title_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:text="title"
+                            android:textSize="20sp" />
+
+                        <com.tripper.tripper.views.HighlightTextView
+                            android:id="@+id/landmark_card_timeline_location_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:paddingTop="5dp"
+                            android:text="location"
+                            android:textSize="16sp" />
+
+                        <com.tripper.tripper.views.HighlightTextView
+                            android:id="@+id/landmark_card_timeline_location_description_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:paddingTop="5dp"
+                            android:text="location desc"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/select_landmark_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:clickable="false"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/landmark_card_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/landmark_timeline_row_left_margin"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <View style="@style/ViewHorizontalLineRowTimelineLandmarkStyle" />
+
+            <TextView
+                android:id="@+id/landmark_card_start_text_view"
+                style="@style/TextViewTimelineLandmarkStyle"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_timeline_start_text_view_background"
+                android:text="Start"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

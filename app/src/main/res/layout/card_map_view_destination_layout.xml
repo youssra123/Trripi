@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/map_marker_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        app:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/map_marker_width"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/landmark_map_card_cover_photo_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/map_marker_height"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_no_image"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/landmark_map_card_cover_photo_view"
+                    >
+
+                    <ImageView
+                        android:id="@+id/landmark_map_card_text_views"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:background="@android:color/darker_gray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="24dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp">
+
+                        <TextView
+                            android:id="@+id/landmark_map_card_title_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:text="Title"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/landmark_map_card_automatic_location_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Automatic location"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/landmark_map_card_location_description_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Location description"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/landmark_map_card_date_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="11/02/2016"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

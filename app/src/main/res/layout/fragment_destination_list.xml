@@ -1,0 +1,51 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tripper.tripper.destination.fragment.DestinationListFragment">
+
+    <TextView
+        android:id="@+id/landmarks_add_trips_when_empty_text_view"
+        style="@style/TextViewWhenListEmptyMessageStyle"
+        android:text="@string/destinations_add_trips_when_empty_message"
+        />
+
+    <TextView
+        android:id="@+id/landmarks_no_results_found_text_view"
+        style="@style/TextViewNoSearchResultsFoundMessageStyle"
+        android:text="@string/destinations_no_search_results_message"
+        />
+
+    <ProgressBar
+        android:id="@+id/landmarks_main_progress_bar_loading_spinner"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/landmarks_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/landmarks_main_floating_action_button"
+            style="@style/FloatingActionButtonRelativeLayoutStyle"
+            android:src="@drawable/ic_add_black_24dp" />
+
+        <ImageView
+            android:id="@+id/landmarks_add_trips_when_empty_arrow_image_view"
+            style="@style/ImageViewWhenListEmptyArrowStyle"
+            android:layout_above="@id/landmarks_main_floating_action_button"
+            android:layout_alignLeft="@+id/landmarks_main_floating_action_button"
+            android:layout_alignRight="@+id/landmarks_main_floating_action_button" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

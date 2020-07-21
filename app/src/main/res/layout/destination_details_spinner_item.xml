@@ -1,0 +1,7 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/landmark_type_spinner_item_text_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:textSize="@dimen/detail_text_size_medium"/>

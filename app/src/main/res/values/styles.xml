@@ -1,0 +1,196 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorControlNormal">@color/primary_dark</item>
+        <item name="colorControlActivated">@color/primary_dark</item>
+        <item name="colorControlHighlight">@color/primary_dark</item>
+    </style>
+
+    <style name="FormDetailLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/detail_text_size_medium</item>
+    </style>
+
+    <style name="TripFormLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/detail_text_size_extra_small</item>
+    </style>
+
+    <style name="datePickerTheme" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+        <!--<item name="android:background">@color/icons</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+    </style>
+
+    <style name="TripperAppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/hint</item>
+        <item name="android:textColorHint">@color/hint</item>
+
+        <item name="android:editTextColor">@color/primary_text</item>
+
+        <item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItemStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/primary_dark</item>
+        <item name="actionModeBackground">@color/primary_dark</item>
+
+        <item name="colorControlNormal">@color/toolBarLineBackground</item>
+        <item name="colorControlActivated">@color/toolBarLineBackground</item>
+        <item name="colorControlHighlight">@color/toolBarLineBackground</item>
+    </style>
+
+
+
+    <style name="spinnerDropDownItemStyle" parent="@android:style/Widget.Holo.Light.DropDownItem">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:background">@color/icons</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ThemeForTranslucent" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    </style>
+    
+    
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="FloatingActionButtonBaseStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="backgroundTint">@color/background3</item>
+        <item name="android:tint">@color/icons</item>
+    </style>
+
+    <style name="FloatingActionButtonCoordinatorLayoutStyle" parent="FloatingActionButtonBaseStyle">
+        <item name="android:layout_gravity">bottom|end</item>
+    </style>
+
+    <style name="FloatingActionButtonRelativeLayoutStyle" parent="FloatingActionButtonBaseStyle">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="useCompatPadding">true</item>
+    </style>
+
+
+    <style name="ViewLineRowTimelineLandmarkStyle">
+        <item name="android:layout_marginLeft">@dimen/landmark_timeline_view_line_left_margin</item>
+        <item name="android:background">@color/landmarkTimelineLineColor</item>
+    </style>
+
+    <style name="ViewHorizontalLineRowTimelineLandmarkStyle" parent="ViewLineRowTimelineLandmarkStyle">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ViewVerticalLineRowTimelineLandmarkStyle" parent="ViewLineRowTimelineLandmarkStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+    </style>
+
+    <style name="TextViewTimelineLandmarkStyle">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/shape_timeline_time_text_view_background</item>
+    </style>
+
+    <style name="ImageViewWhenListEmptyArrowStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginBottom">-24dp</item>
+        <item name="android:src">@drawable/ic_arrow</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="TextViewWhenListEmptyMessageStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:textSize">@dimen/add_when_empty_list_message_text_size</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="TextViewNoSearchResultsFoundMessageStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="KeepTripAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="KeepTripAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextViewLandmarkResultsStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textSize">@dimen/trip_list_view_sub_title_text_size</item>
+    </style>
+
+    <style name="TextViewTripListRowStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <style name="ImageViewChangePhotoSizeIconCircle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/shape_grey_circle_with_alpha_background</item>
+    </style>
+
+    <style name="ImageViewExpandPhotoIconCircle" parent="ImageViewChangePhotoSizeIconCircle">
+        <item name="android:src">@drawable/ic_arrow_expand_white_24dp</item>
+    </style>
+
+    <style name="ImageViewClosePhotoIconCircle" parent="ImageViewChangePhotoSizeIconCircle">
+        <item name="android:src">@drawable/ic_close_white_24dp</item>
+    </style>
+
+</resources>

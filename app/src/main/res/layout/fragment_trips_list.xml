@@ -1,0 +1,79 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tripper.tripper.trip.fragment.TripsListFragment">
+
+    <ViewSwitcher
+        android:id="@+id/trips_list_view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Trip list view-->
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/trips_add_trips_when_empty_text_view"
+                style="@style/TextViewWhenListEmptyMessageStyle"
+                android:text="@string/trips_add_trips_when_empty_message"
+                />
+
+            <ProgressBar
+                android:id="@+id/trips_main_progress_bar_loading_spinner"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ListView
+                android:id="@+id/trips_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/trips_main_floating_action_button"
+                    style="@style/FloatingActionButtonRelativeLayoutStyle"
+                    android:src="@drawable/ic_add_black_24dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/trips_add_trips_when_empty_arrow_image_view"
+                    style="@style/ImageViewWhenListEmptyArrowStyle"
+                    android:layout_above="@id/trips_main_floating_action_button"
+                    android:layout_alignLeft="@+id/trips_main_floating_action_button"
+                    android:layout_alignRight="@+id/trips_main_floating_action_button" />
+            </RelativeLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <!--Search view-->
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/trips_search_progress_bar_loading_spinner"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ExpandableListView
+                android:id="@+id/trips_search_results_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:groupIndicator="@drawable/search_indicator"
+                android:scrollbars="vertical"/>
+        </android.support.design.widget.CoordinatorLayout>
+    </ViewSwitcher>
+
+
+</android.support.design.widget.CoordinatorLayout>

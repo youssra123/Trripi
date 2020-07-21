@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_trip_view_details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    tools:context="com.tripper.tripper.trip.fragment.TripViewDetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- ~~~~~~~~~~~~~~~~~~ Photo ~~~~~~~~~~~~~~~~~~~ -->
+
+            <FrameLayout
+                android:id="@+id/trip_frame_layout_details_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.tripper.tripper.views.CustomImageView
+                    android:id="@+id/trip_view_details_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/default_no_image"/>
+
+                <ImageView style="@style/ImageViewExpandPhotoIconCircle" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="100dp"
+                    app:cardCornerRadius="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/icons"
+                        android:orientation="vertical"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+                        <!-- ~~~~~~~~~~~~~~~~~~ Title ~~~~~~~~~~~~~~~~~~~ -->
+                        <TextView
+                            android:id="@+id/trip_view_details_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="24dp"
+                            android:paddingBottom="16dp"
+                            android:textSize="@dimen/detail_text_size_large"
+                            android:textStyle="bold"
+                            android:visibility="visible"/>
+
+                        <View
+                            android:id="@+id/trip_view_underline_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <!-- ~~~~~~~~~~~~~~~~~~ Dates ~~~~~~~~~~~~~~~~~~~ -->
+                        <TextView
+                            android:id="@+id/trip_view_details_dates"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:textSize="@dimen/detail_text_size_medium"
+                            android:visibility="visible"/>
+
+                        <View
+                            android:id="@+id/trip_view_uperline_place"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <!-- ~~~~~~~~~~~~~~~~~~ Place ~~~~~~~~~~~~~~~~~~~ -->
+                        <TextView
+                            android:id="@+id/trip_view_details_place"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:textSize="@dimen/detail_text_size_medium"
+                            android:visibility="visible"/>
+
+                        <View
+                            android:id="@+id/trip_view_uperline_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+
+                        <!-- ~~~~~~~~~~~~~~~~~~ Description ~~~~~~~~~~~~~~~~~~~ -->
+                        <TextView
+                            android:id="@+id/trip_view_details_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="24dp"
+                            android:textSize="@dimen/detail_text_size_medium"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/expanded_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/expanded_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView style="@style/ImageViewClosePhotoIconCircle" />
+
+    </RelativeLayout>
+</RelativeLayout>

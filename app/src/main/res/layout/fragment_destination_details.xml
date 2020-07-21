@@ -1,0 +1,276 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_landmark_details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView android:id="@+id/landmark_details_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical"
+            tools:context="com.tripper.tripper.destination.fragment.DestinationDetailsFragment">
+
+            <!-- ~~~~~~~~~~~~~~~~~~ Photo ~~~~~~~~~~~~~~~~~~~ -->
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="24dp">
+
+                <com.tripper.tripper.views.CustomImageView
+                    android:id="@+id/landmark_details_photo_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_no_image"/>
+
+                <ImageView
+                    android:id="@+id/landmark_view_details_camera_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/landmark_details_photo_image_view"
+                    android:layout_alignBottom="@id/landmark_details_photo_image_view"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@android:drawable/ic_menu_camera" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <!--parent trip-->
+                <TextView
+                    android:id="@+id/parent_trip_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:textSize="@dimen/detail_text_size_extra_extra_small"
+                    android:visibility="gone"/>
+
+                <!-- ~~~~~~~~~~~~~~~~~~ Title ~~~~~~~~~~~~~~~~~~~ -->
+                <!--<TextView-->
+                    <!--android:id="@+id/landmark_details_small_title"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/landmark_details_title_text"-->
+                    <!--android:textSize="@dimen/detail_text_size_extra_small"-->
+                    <!--android:visibility="visible"/>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/landmark_details_title_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/destination_details_title_text"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/detail_text_size_medium"/>
+
+                </LinearLayout>
+
+                <!-- ~~~~~~~~~~~~~~~~~~ Date ~~~~~~~~~~~~~~~~~~~ -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp">
+
+                    <TextView
+                        android:id="@+id/landmark_details_small_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/destination_details_date_text"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/detail_text_size_medium"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/landmark_details_date_edit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:background="@android:color/transparent"
+                        android:focusable="false"
+                        android:textSize="@dimen/detail_text_size_medium"/>
+
+                    <EditText
+                        android:id="@+id/landmark_details_time_edit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:background="@android:color/transparent"
+                        android:focusable="false"
+                        android:textSize="@dimen/detail_text_size_medium"/>
+
+                </LinearLayout>
+
+
+                <!-- ~~~~~~~~~~~~~~~~~~ Type ~~~~~~~~~~~~~~~~~~~ -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp">
+
+                    <TextView
+                        android:id="@+id/landmark_details_small_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/destination_details_type_text"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/detail_text_size_medium"
+                        android:visibility="visible"/>
+                    <ImageView
+                        android:id="@+id/landmark_details_icon_type_spinner_item"
+                        android:layout_width="@dimen/detail_spinner_icon_size"
+                        android:layout_height="@dimen/detail_spinner_icon_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/hotel" />
+
+                    <Spinner
+                        android:id="@+id/landmark_details_type_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/detail_text_size_medium"/>
+
+                </LinearLayout>
+
+                <!-- ~~~~~~~~~~~~~~~~~~ Automatic Location ~~~~~~~~~~~~~~~~~~~ -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:freezesText="true"
+                        android:text="@string/destination_details_automatic_location_text"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/detail_text_size_medium"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/landmark_details_automatic_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:freezesText="true"
+                            android:textSize="@dimen/detail_text_size_medium"
+                            android:visibility="visible"
+                            />
+
+                        <TextView
+                            android:id="@+id/landmark_details_automatic_location_error"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/landmark_details_automatic_location"
+                            android:layout_alignLeft="@id/landmark_details_automatic_location"
+                            android:freezesText="false"
+                            android:textSize="@dimen/detail_text_size_extra_extra_small"
+                            android:textStyle="italic"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <ViewSwitcher
+                        android:id="@+id/landmark_details_gps_view_switcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inAnimation="@android:anim/fade_in">
+                        <ProgressBar
+                            android:id="@+id/landmark_details_gps_location_loading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:id="@+id/landmark_details_gps_location_image_button"
+                            android:layout_width="@dimen/detail_spinner_icon_size"
+                            android:layout_height="@dimen/detail_spinner_icon_size"
+                            android:adjustViewBounds="true"
+                            android:background="@color/background"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_map"/>
+                    </ViewSwitcher>
+                </LinearLayout>
+
+                <!-- ~~~~~~~~~~~~~~~~~~ Location Description ~~~~~~~~~~~~~~~~~~~ -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/landmark_details_location_description_edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/destination_details_location_description_text"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/detail_text_size_medium"/>
+
+                </LinearLayout>
+
+                <!-- ~~~~~~~~~~~~~~~~~~ Description ~~~~~~~~~~~~~~~~~~~ -->
+
+                <EditText
+                    android:id="@+id/landmark_details_description_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="start"
+                    android:hint="@string/destination_details_description_text"
+                    android:lines="4"
+                    android:scrollbars="vertical"
+                    android:textSize="@dimen/detail_text_size_medium"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/landmark_details_floating_action_button"
+        style="@style/FloatingActionButtonCoordinatorLayoutStyle"
+        android:src="@drawable/ic_done_black_24dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

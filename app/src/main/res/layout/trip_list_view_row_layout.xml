@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="24dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp">
+
+            <com.tripper.tripper.views.HighlightTextView
+                android:id="@+id/landmark_map_card_title_text_view"
+                style="@style/TextViewTripListRowStyle"
+                android:text="Title"
+                android:textSize="@dimen/trip_list_view_title_text_size" />
+
+            <com.tripper.tripper.views.HighlightTextView
+                android:id="@+id/landmark_map_card_location_text_view"
+                style="@style/TextViewTripListRowStyle"
+                android:text="Location"
+                android:textSize="@dimen/trip_list_view_sub_title_text_size" />
+
+            <TextView
+                android:id="@+id/landmark_map_card_date_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11/02/2016 - 11/02/2016"
+                android:textSize="@dimen/trip_list_view_sub_title_text_size" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/landmark_map_card_cover_photo_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_no_image" />
+    </LinearLayout>
+
+    <View android:layout_width = "match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tripListDividerColor"/>
+</LinearLayout>

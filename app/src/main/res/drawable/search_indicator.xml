@@ -1,0 +1,37 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_empty="true">-->
+        <!--<layer-list>-->
+            <!--<item-->
+                <!--android:left="0dp"-->
+                <!--android:right="3dp"-->
+                <!--android:top="15dp"-->
+                <!--android:bottom="15dp"-->
+                <!--android:drawable="@drawable/ic_keyboard_arrow_down_blue">-->
+            <!--</item>-->
+        <!--</layer-list>-->
+    <!--</item>-->
+
+    <item android:state_expanded="true">
+        <layer-list>
+            <item
+                android:bottom="15dp"
+                android:drawable="@drawable/ic_keyboard_arrow_up_blue"
+                android:left="0dp"
+                android:right="3dp"
+                android:top="15dp">
+            </item>
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+            <item
+                android:bottom="15dp"
+                android:drawable="@drawable/ic_keyboard_arrow_down_blue"
+                android:left="0dp"
+                android:right="3dp"
+                android:top="15dp">
+            </item>
+        </layer-list>
+    </item>
+</selector>

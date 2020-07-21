@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="toolBarLineBackground">#ff33b5e5</color>
+    <color name="notificationBackground">#ff33b5e5</color>
+    <color name="tripListDividerColor">#d1d1d1</color>
+    <color name="landmarkTimelineLineColor">#2196f3</color>
+
+    <color name="tripTimelineLineColor">#2196f3</color>
+
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#7C4DFF</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="background">#def9f7</color>
+    <color name="background2">#f2f8fd</color>
+    <color name="background3">#2196f3</color>
+
+    <color name="hint">#BDBDBD</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="auto_complete_map_background">#FFFFFF</color>
+
+    <color name="expandPhotoArrowBackground">#90212121</color>
+
+    <color name="red1">#af0a0a</color>
+    <color name="red2">#c40909</color>
+    <color name="red3">#e50909</color>
+    <color name="orange1">#FF8333</color>
+    <color name="green1">#29CF40</color>
+    <color name="blue1">#66a3ff</color>
+    <color name="blue2">#0033cc</color>
+    <color name="linkBlue">#4d94ff</color>
+    <color name="blue3">#00c4cc</color>
+    <color name="blue4">#00aab1</color>
+    <color name="blue5">#007f85</color>
+    <color name="White">#fff</color>
+    <color name="darkGrey">#a6a6a6</color>
+    <color name="Grey">#c3c3c3</color>
+    <color name="lightGrey">#f2f2f2</color>
+    <color name="transparentGrey">#8f737373</color>
+    <color name="DarkGrey">#737373</color>
+    <color name="Black">#000</color>
+
+</resources>
